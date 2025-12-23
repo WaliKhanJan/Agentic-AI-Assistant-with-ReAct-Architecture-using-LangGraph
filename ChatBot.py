@@ -48,7 +48,7 @@ from langgraph.graph.message import add_messages  ## Reducers in Langgraph (for 
 class State(TypedDict):
     messages: Annotated[list[AnyMessage], add_messages]  
     
-### Entire Chatbot With LangGraph
+### Building Chatbot With LangGraph
 from IPython.display import Image, display
 from langgraph.graph import StateGraph, START, END
 from langgraph.prebuilt import ToolNode
@@ -87,3 +87,4 @@ messages=graph.invoke({"messages":"Hi, my name is Wali, How are you? and then pl
 for m in messages['messages']:
 
     m.pretty_print()
+
