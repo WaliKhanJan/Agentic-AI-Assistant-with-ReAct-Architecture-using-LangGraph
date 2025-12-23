@@ -1,0 +1,2 @@
+# Agentic-AI-Assistant-with-ReAct-Architecture-using-LangGraph
+An agentic AI system built using the ReAct (Reason + Act) architecture with LangGraph and Groq LLM. The agent intelligently decides when external tools such as arXiv and Wikipedia are required to answer user queries, retrieves relevant information, and generates accurate, context-aware responses through structured reasoning and action workflows.
