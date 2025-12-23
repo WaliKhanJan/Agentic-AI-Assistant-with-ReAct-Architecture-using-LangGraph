@@ -14,7 +14,7 @@ api_wrapper_wiki=WikipediaAPIWrapper(top_k_results=1,doc_content_chars_max=500)
 wiki=WikipediaQueryRun(api_wrapper=api_wrapper_wiki)
 wiki.name
 
-### IMPORTING THE API KEYS FROM THE ENV FILE
+### IMPORTING THE API KEYS FROM THE .env FILE
 from dotenv import load_dotenv
 load_dotenv()
 import os
@@ -85,4 +85,5 @@ print("Graph saved as BotFlow.png") """
 
 messages=graph.invoke({"messages":"Hi, my name is Wali, How are you? and then please tell me the recent research paper on quantum computing?"})
 for m in messages['messages']:
+
     m.pretty_print()
